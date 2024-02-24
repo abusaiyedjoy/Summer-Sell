@@ -285,7 +285,7 @@
           <div
             class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-12"
           >
-            <div 
+            <div
               class="flex card flex-col gap-2 justify-center rounded-xl w-[250px] mb-8 px-2 py-4 mt-8 items-center bg-white shadow-lg shadow-slate-400"
             >
               <div class="bg-[#11111126] p-10 rounded-xl">
@@ -407,8 +407,16 @@
             <label
               class="input input-bordered relative flex items-center gap-2"
             >
-              <input id="input-field" type="text" class="grow" placeholder="Search" />
-              <button id="apply-btn" class="btn btn-secondary text-lg absolute right-0">
+              <input
+                id="input-field"
+                type="text"
+                class="grow"
+                placeholder="Search"
+              />
+              <button
+                id="apply-btn"
+                class="btn btn-secondary text-lg absolute right-0"
+              >
                 Apply
               </button>
             </label>
@@ -420,29 +428,51 @@
             </div>
             <hr class="bg-[#1111114D] border-dashed my-4" />
             <div>
-              <div id="Product-container" class=" text-xl font-medium px-8 lg:px-4">
-                
-              </div>
+              <div
+                id="Product-container"
+                class="text-xl font-medium px-8 lg:px-4"
+              ></div>
             </div>
             <hr class="bg-[#1111114D] border-dashed my-4" />
             <div>
               <div class="flex justify-between px-8 lg:px-4">
                 <h1 class="text-xl font-medium mb-4">Total Price:</h1>
-                <h1 class="text-xl font-medium mb-4"><span id="Total">00</span> TK</h1>
+                <h1 class="text-xl font-medium mb-4">
+                  <span id="Total">00</span> TK
+                </h1>
               </div>
               <div class="flex justify-between px-8 lg:px-4">
                 <h1 class="text-xl font-medium mb-4">Discount Price:</h1>
-                <h1 class="text-xl font-medium mb-4"><span id="Discount">00</span> TK</h1>
+                <h1 class="text-xl font-medium mb-4">
+                  <span id="Discount">00</span> TK
+                </h1>
               </div>
               <div class="flex justify-between px-8 lg:px-4">
                 <h1 class="text-xl font-medium mb-4">Grand Total:</h1>
-                <h1 class="text-xl font-medium mb-4"><span id="Grand">00</span> TK</h1>
+                <h1 class="text-xl font-medium mb-4">
+                  <span id="Grand">00</span> TK
+                </h1>
               </div>
             </div>
             <hr class="bg-[#1111114D] border-dashed my-4" />
-            <button class="btn w-full text-xl btn-secondary">
-              Make Purchase
+            <!-- The button to open modal -->
+            <button class="w-full">
+             <a href="#my_modal_8" class="btn w-full text-xl btn-secondary"> Make Purchase</a>
             </button>
+            
+            <!-- Put this part before tag -->
+            <div class="modal text-center" role="dialog" id="my_modal_8">
+              <div class="modal-box">
+                <div class="flex justify-center">
+                  <img src="./images/congo.png" alt="">
+                </div>
+                <h3 class="font-bold text-lg">Congratulation!</h3>
+                <p class="py-4">You purchase the product</p>
+                <div class="modal-action flex justify-center">
+                  <a href="#" class="btn text-xl btn-secondary">Go to Home</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
