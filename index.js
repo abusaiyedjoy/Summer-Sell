@@ -39,7 +39,11 @@ for (let i = 0; i < cards.length; i++) {
 
       totalPrice += price;
       const total = document.getElementById("Total");
-      total.innerText = totalPrice;
+        total.innerText = totalPrice;
+        
+
+        const grand = document.getElementById("Grand");
+        grand.innerText = totalPrice;
     })
 
     
